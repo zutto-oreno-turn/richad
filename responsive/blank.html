@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>responsive-blank</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+
+        .wrapper {
+            width: 375px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        header {
+            height: 172px;
+            background-color: #eeeeee;
+        }
+
+        #playable {
+            width: 375px;
+            height: 210px;
+            background-color: #eeeeff;
+        }
+
+        main {
+            display: block;
+        }
+
+        .sp-menu {
+            height: 114px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: #eeeeee;
+        }
+
+        .sp-article {
+            height: 60px;
+            margin-top: 1px;
+            background-color: #eeeeee;
+        }
+
+        .pc-article1 {
+            display: none;
+        }
+
+        .pc-article2 {
+            display: none;
+        }
+
+        .pc-article3 {
+            display: none;
+        }
+
+        .pc-side-entire {
+            display: none;
+        }
+
+        .pc-side-wrapper {
+            display: none;
+        }
+
+        .pc-left {
+            display: none;
+        }
+
+        .pc-right {
+            display: none;
+        }
+
+        @media screen and (min-width:768px) {
+            .wrapper {
+                width: 990px;
+            }
+
+            header {
+                height: 202px;
+            }
+
+            #playable {
+                width: 990px;
+                height: 247px;
+                margin-top: 10px;
+            }
+
+            main {
+                display: flex;
+            }
+
+            .sp-menu {
+                display: none;
+            }
+
+            .sp-article {
+                display: none;
+            }
+
+            .pc-article1 {
+                display: block;
+                width: 170px;
+                height: 602px;
+                margin-top: 10px;
+                margin-right: 10px;
+                background-color: #eeeeee;
+            }
+
+            .pc-article2 {
+                display: block;
+                width: 451px;
+                height: 602px;
+                margin-top: 10px;
+                margin-right: 10px;
+                background-color: #eeeeee;
+            }
+
+            .pc-article3 {
+                display: block;
+                width: 350px;
+                height: 296px;
+                margin-top: 10px;
+                background-color: #eeeeee;
+            }
+
+            .pc-side-entire {
+                display: block;
+                position: absolute;
+                width: 100%;
+                top: 0px;
+                left: 0px;
+            }
+
+            .pc-side-wrapper {
+                display: block;
+                position: relative;
+                width: 990px;
+                margin: 0px auto;
+            }
+
+            .pc-left {
+                display: block;
+                position: absolute;
+                width: 170px;
+                height: 1024px;
+                top: 0px;
+                left: -180px;
+                background-color: #eeeeff;
+            }
+
+            .pc-right {
+                display: block;
+                position: absolute;
+                width: 170px;
+                height: 1024px;
+                top: 0px;
+                right: -180px;
+                background-color: #eeeeff;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header></header>
+        <div id="playable"></div>
+        <main>
+            <div class="pc-article1"></div>
+            <div class="pc-article2"></div>
+            <div class="pc-article3"></div>
+            <div class="sp-menu"></div>
+            <div class="sp-article"></div>
+            <div class="sp-article"></div>
+            <div class="sp-article"></div>
+            <div class="sp-article"></div>
+            <div class="sp-article"></div>
+            <div class="sp-article"></div>
+            <div class="sp-article"></div>
+        </main>
+        <div class="pc-side-entire">
+            <div class="pc-side-wrapper">
+                <div class="pc-left"></div>
+                <div class="pc-right"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
