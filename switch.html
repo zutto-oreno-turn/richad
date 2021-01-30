@@ -25,7 +25,6 @@
             width: 375px;
             height: 210px;
             margin-top: 1px;
-            background-color: #eeeeff;
             border: 0;
         }
 
@@ -77,10 +76,23 @@
                 height: 202px;
             }
 
-            #playable {
+            .switch-rapper {
                 width: 990px;
                 height: 247px;
                 margin-top: 10px;
+            }
+
+            .switch {
+                width: 990px;
+                height: 247px;
+            }
+
+            #playable {
+                position: relative;
+                width: 384px;
+                height: 216px;
+                top: -235px;
+                left: 303px;
             }
 
             main {
@@ -159,12 +171,15 @@
 <body>
     <div class="wrapper">
         <header></header>
-        <iframe
-            id="playable"
-            scrolling="no"
-            frameborder="0"
-            src="https://www.zutto-oreno-turn.com/unity/playable032/Test.html"
-        ></iframe>
+        <div class="switch-rapper">
+            <img class="switch" src="assets/switch.png" />
+            <iframe
+                id="playable"
+                scrolling="no"
+                frameborder="0"
+                src="https://www.zutto-oreno-turn.com/unity/playable032/Test.html"
+            ></iframe>
+        </div>
         <main>
             <div class="pc-article1"></div>
             <div class="pc-article2"></div>
