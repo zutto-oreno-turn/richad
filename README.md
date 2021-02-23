@@ -1,6 +1,6 @@
 # Rich Advertising
 
-## Eample
+## Example
 
 ### Nintendo Switch
 - https://www.zutto-oreno-turn.com/richad/switch.html
